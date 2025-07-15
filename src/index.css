@@ -1,0 +1,193 @@
+/* src/index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+  transition: background 0.3s, color 0.3s;
+}
+
+header.header {
+  background-color: #330066;
+  /* background-color: #24a0b5; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  box-shadow: gray;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 0;
+}
+
+/* .header:hover {
+  box-shadow: 0 4px 12px rgba(36, 160, 181, 0.5);
+} */
+
+footer.footer {
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  color: #111827;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content,
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .footer-content p {
+    font-size: 12px;
+  }
+}
+
+/* Logo + Side Text (left) */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo-container:hover::after {
+  content: "Built by Gift Amadi";
+  /* Tooltip */
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  background-color: #330066;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .logo-container:hover::after {
+    font-size: 12px;
+    padding: 3px 6px;
+    bottom: -20px;
+  }
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.logo-side-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .logo-side-text {
+    font-size: 14px;
+  }
+}
+
+footer .logo-side-text {
+  color: #111827;
+}
+
+.home-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .home-text {
+    font-size: 14px;
+  }
+}
+
+.tools-dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tools-dashboard p {
+  text-align: center;
+  margin: 5px 0 40px 0;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #330066;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.tool-card {
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tool-icon-container {
+  background-color: #330066;
+  width: 2.9rem;
+  height: 2.9rem;
+  padding: 5px;
+  margin: 1.2rem auto 1rem auto;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.tool-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  color: #FFCC00;
+}

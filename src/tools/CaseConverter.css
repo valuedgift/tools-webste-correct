@@ -1,0 +1,175 @@
+/* CSS STYLES HERE */
+.app {
+  font-family: poppins, sans-serif;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* .first-section {
+    padding: 10px; 
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  } */
+
+.text-container {
+  margin-bottom: 4rem;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.textarea-container {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 95%;
+  height: 150px;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 1rem;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  bottom: 22px;
+  right: 25px;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1010px) {
+  .icons {
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icons {
+    right: 2rem;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .icons {
+    right: 2rem;
+  }
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+.icon-wrapper:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.icon-wrapper:hover .tooltip,
+.icon-wrapper .tooltip:has(+ .icon:active),
+.icon-wrapper .tooltip:has(+ .icon:focus) {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  color: white;
+  background-color: #330066;
+}
+
+.clear {
+  background-color: none;
+  color: black;
+  border: 1px solid;
+}
+
+.clear:hover {
+  background-color: red;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .counters {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.text-section-container {
+  margin-top: 5rem;
+}
+
+.text-section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+h3 {
+  margin: 0;
+}
