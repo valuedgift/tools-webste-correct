@@ -17,31 +17,44 @@ body {
 
 header.header {
   background-color: #330066;
-  /* background-color: #24a0b5; */
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   box-shadow: gray;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   text-align: center;
   padding: 1rem;
-  margin-top: 0;
 }
 
-/* .header:hover {
-  box-shadow: 0 4px 12px rgba(36, 160, 181, 0.5);
-} */
+.back-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.back-arrow:hover {
+  opacity: 0.8;
+}
+
+.header .logo-container:hover .logo-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 footer.footer {
   background-color: #f3f4f6;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
-  padding: 1rem;
   text-align: center;
   color: #111827;
   font-size: 0.9rem;
   margin-bottom: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* border-radius: 0.5rem; */
+  padding: 1rem;
 }
 
 .header-content,
@@ -51,45 +64,103 @@ footer.footer {
   justify-content: space-between;
 }
 
-@media (max-width: 600px) {
+.footer .logo-container:hover .logo-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
   .footer-content p {
     font-size: 12px;
   }
 }
 
-/* Logo + Side Text (left) */
 .logo-container {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 8px;
-  position: relative;
   cursor: pointer;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
 }
 
-.logo-container:hover::after {
-  content: "Built by Gift Amadi";
-  /* Tooltip */
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  background-color: #330066;
-  color: #fff;
-  padding: 4px 8px;
-  border-radius: 5px;
-  border: 1px solid #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
-  font-weight: 400;
-  white-space: nowrap;
+.logo-container:hover .logo-tooltip {
+  opacity: 1;
+  visibility: visible;
 }
 
+.logo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.logo-text-container {
+  display: flex;
+  align-items: center;
+}
+
+/* .logo-tooltip {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(8px);
+  background: #330066;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+} */
+
 @media (max-width: 600px) {
-  .logo-container:hover::after {
-    font-size: 12px;
-    padding: 3px 6px;
-    bottom: -20px;
+  .logo-tooltip {
+    font-size: 8px;
+    padding: 4px 10px;
   }
+}
+
+.logo-container:hover .logo-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.footer-madeby {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .footer-madeby {
+    text-align: start;
+  }
+}
+
+.footer-madeby a {
+  color: #24a0b5;
+  text-decoration: none;
+}
+
+.footer-madeby a:hover {
+  text-decoration: underline;
 }
 
 .logo {
@@ -121,23 +192,18 @@ footer .logo-side-text {
   color: #111827;
 }
 
-.home-text {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-
-@media (max-width: 600px) {
-  .home-text {
-    font-size: 14px;
-  }
-}
-
 .tools-dashboard {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;  /* or any width you prefer */
+  margin: 0 auto;     /* center horizontally */
+  padding: 0 16px;    /* optional horizontal padding */
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .tools-dashboard p {
@@ -157,6 +223,16 @@ footer .logo-side-text {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
 }
+
+.tools-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* .tools-card > .card-item {
+  flex: 1 1 200px; 
+} */
 
 .tool-card {
   text-align: center;

@@ -37,8 +37,8 @@ const tools = [
 
 const Home = () => (
   <section className="tools-dashboard">
-    <h1 className="dashboard-title">Your Favourite SEO Tools</h1>
-    <p>A complete set of text tools is now at your fingertips. Run a spell checker, Count words or change text case.</p>
+    <h1 className="dashboard-title">Quicky Tools For Your Use</h1>
+    <p>A Set of quick tools to help you complete your task</p>
     <div className="tools-grid">
       {tools.map(tool => (
         <Link key={tool.path} to={tool.path} className="tool-card">

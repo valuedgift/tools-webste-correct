@@ -7,6 +7,7 @@ import SpellChecker from './tools/SpellChecker';
 import CaseConverter from './tools/CaseConverter';
 import WordCounter from './tools/WordCounter';
 import WebsitePageSizeChecker from './tools/WebsitePageSizeChecker';
+import Contributors from './pages/Contributors';
 import NotFound from './pages/NotFound';
 import './index.css';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/case-converter" element={<CaseConverter />} />
           <Route path="/word-counter" element={<WordCounter />} />
           <Route path="/page-size-checker" element={<WebsitePageSizeChecker />} />
+          <Route path="/contributors" element={<Contributors />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
