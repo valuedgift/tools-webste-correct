@@ -9,12 +9,6 @@
   text-align: center;
 }
 
-/* .first-section {
-    padding: 10px; 
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  } */
-
 .text-container {
   margin-bottom: 4rem;
 }
@@ -99,7 +93,7 @@ textarea {
   bottom: 150%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: #330066;
   color: #fff;
   padding: 4px 8px;
   border-radius: 4px;
