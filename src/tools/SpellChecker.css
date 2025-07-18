@@ -162,9 +162,7 @@ select {
 }
 
 .check-buttons button:hover {
-  background-color: #330066;
-  border: 1px solid #FFCC00;
-  /* background: #9fa0a1; */
+  background-color: #440087;
 }
 
 .check-buttons button:disabled {

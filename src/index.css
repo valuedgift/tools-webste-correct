@@ -198,6 +198,10 @@ footer .logo-side-text {
   margin: 0 auto;
 }
 
+.flex-grow {
+  min-height: calc(100vh - 160px);
+}
+
 .container {
   max-width: 1200px;  
   margin: 0 auto;     
