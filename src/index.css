@@ -110,25 +110,6 @@ footer.footer {
   align-items: center;
 }
 
-/* .logo-tooltip {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform: translateY(8px);
-  background: #330066;
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: 1px solid #fff;
-  font-size: 10px;
-  font-weight: 600;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 10;
-} */
-
 @media (max-width: 600px) {
   .logo-tooltip {
     font-size: 8px;

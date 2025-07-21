@@ -196,7 +196,6 @@ select {
   height: 18px;
   border: 3px solid rgba(0, 0, 0, 0.2);
   border-top: 3px solid #3498db;
-  /* Blue spinner */
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: auto;

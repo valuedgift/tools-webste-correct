@@ -15,11 +15,6 @@ const Header = () => {
             <img src="/logo.png" alt="Logo" className="logo" />
             <span className="logo-side-text">Quicky.tools</span>
           </Link>
-
-          {/* Simple Tooltip */}
-          {/* <div className="logo-tooltip">
-            Made with love by Interns at Aptiw
-          </div> */}
         </div>
 
         {isNotHome && (
