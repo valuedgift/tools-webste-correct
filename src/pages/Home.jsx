@@ -32,7 +32,7 @@ const tools = [
     description: 'Checks the accurate size of your page',
     icon: <RiParkingLine  />
   },
-  // I'll add more tools with their unique icons here.
+  // More tools with their unique icons will be added here.
 ];
 
 const Home = () => (
